@@ -257,7 +257,7 @@ main p {
   }
 
   /*ROWS SIZING FOR TILTED DEVICES*/
-  @media screen and (max-height: 780px) and (max-width: 1050px)  
+  @media screen and (max-height: 780px) and (max-width: 1060px)  
   {
     main {
         grid-template-rows: 100vh 100vh 100vh;
