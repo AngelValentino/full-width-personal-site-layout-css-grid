@@ -110,7 +110,6 @@ main p {
 }
 
 /*MEDIA QUIERIES*/
-
 @media screen and (max-width: 1470px) {
     /*GRID LAYOUT 2 COLUMNS*/
     main {
@@ -258,11 +257,11 @@ main p {
   }
 
   /*ROWS SIZING FOR TILTED DEVICES*/
-  @media screen and (max-height: 780px) {
+  @media screen and (max-height: 780px) and (max-width: 1050px)  
+  {
     main {
         grid-template-rows: 100vh 100vh 100vh;
     }
-
   }
 
   @media screen and (max-height: 380px) {
