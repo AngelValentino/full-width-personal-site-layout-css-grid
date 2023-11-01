@@ -4,13 +4,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
-}
-
-@media screen and (max-height: 950px)  {
-    body {
-        overflow: auto;
-    }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -119,10 +112,6 @@ main p {
 /*MEDIA QUIERIES*/
 
 @media screen and (max-width: 1470px) {
-    body {
-        overflow: auto;
-    }
-    
     /*GRID LAYOUT 2 COLUMNS*/
     main {
         grid-template-columns: 1fr 1fr;
