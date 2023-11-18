@@ -71,10 +71,6 @@ main p {
     margin-right: 20px;
 }
 
-.panel.welcome a:hover {
-    color: #eeeee7;
-}
-
 .panel.welcome p {
     color: #a8a8a8;
     max-width: 540px;
@@ -95,12 +91,14 @@ main p {
     align-self: end;
 }
 
+
 /*PANEL ABOUT*/
 
 .panel.about {
     grid-template-rows: 3fr 1fr;
     overflow: hidden;
 }
+
 
 /*PANEL PHOTOS*/
 
@@ -109,7 +107,23 @@ main p {
     overflow: hidden;
 }
 
+
+
 /*MEDIA QUIERIES*/
+
+/*MEDIA QUERY FOR ONLY HOVER CAPABLE DEVICES*/
+
+@media screen and (hover: hover) {
+/*PANEL WELC0ME*/
+
+    .panel.welcome a:hover {
+        color: #eeeee7;
+    }
+}
+
+/*END OF MEDIA QUERY FOR ONLY HOVER CAPABLE DEVICES*/
+
+
 @media screen and (max-width: 1470px) {
     /*GRID LAYOUT 2 COLUMNS*/
     main {
@@ -202,8 +216,10 @@ main p {
         width: 50px;
     }
 
-    .panel.welcome a:nth-of-type(odd):hover {
-        transform: scale(1.1);
+    @media screen and (hover: hover) {
+        .panel.welcome a:nth-of-type(odd):hover {
+            transform: scale(1.1);
+        }
     }
 
     .panel.welcome a:nth-of-type(odd):active {
